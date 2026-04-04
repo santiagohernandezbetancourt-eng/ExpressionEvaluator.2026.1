@@ -2,14 +2,11 @@
 
 public class Evaluator
 {
-    // Converts infix to postfix then evaluates it
     public static double Evaluate(string infix)
     {
         var postfix = InfixToPostfix(infix);
         return EvaluatePostfix(postfix);
     }
-
-    // Splits the expression into numbers and operators
     private static List<string> Tokenize(string infix)
     {
         var tokens = new List<string>();
@@ -38,7 +35,6 @@ public class Evaluator
         return tokens;
     }
 
-    // Shunting-yard algorithm to convert infix to postfix
     private static List<string> InfixToPostfix(string infix)
     {
         var postFix = new List<string>();
@@ -97,7 +93,6 @@ public class Evaluator
         return postFix;
     }
 
-    // Priority when the operator is on the stack
     private static int PriorityStack(string item) => item switch
     {
         "^" => 3,
@@ -109,7 +104,6 @@ public class Evaluator
         _ => 0,
     };
 
-    // Priority when the operator comes from the input
     private static int PriorityInfix(string item) => item switch
     {
         "^" => 4,
@@ -121,7 +115,6 @@ public class Evaluator
         _ => 0,
     };
 
-    // Evaluates the postfix expression
     private static double EvaluatePostfix(List<string> postfix)
     {
         var stack = new Stack<double>();

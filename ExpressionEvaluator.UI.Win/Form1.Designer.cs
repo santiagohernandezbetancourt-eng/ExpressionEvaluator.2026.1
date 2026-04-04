@@ -5,10 +5,8 @@ namespace ExpressionEvaluator.UI.Win;
 
 partial class Form1
 {
-    // Don't touch this, designer needs it
     private System.ComponentModel.IContainer components = null;
 
-    // Cleans up when the form closes
     protected override void Dispose(bool disposing)
     {
         if (disposing && (components != null))
@@ -93,7 +91,7 @@ partial class Form1
         // 
         btnDivide.BackColor = Color.FromArgb(192, 64, 0);
         btnDivide.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnDivide.Location = new Point(227, 78);
+        btnDivide.Location = new Point(290, 133);
         btnDivide.Name = "btnDivide";
         btnDivide.Size = new Size(52, 49);
         btnDivide.TabIndex = 4;
@@ -105,7 +103,7 @@ partial class Form1
         // 
         btnMultiply.BackColor = Color.FromArgb(192, 64, 0);
         btnMultiply.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnMultiply.Location = new Point(290, 78);
+        btnMultiply.Location = new Point(227, 133);
         btnMultiply.Name = "btnMultiply";
         btnMultiply.Size = new Size(52, 49);
         btnMultiply.TabIndex = 5;
@@ -163,7 +161,7 @@ partial class Form1
         // 
         btnPlus.BackColor = Color.FromArgb(192, 64, 0);
         btnPlus.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnPlus.Location = new Point(227, 133);
+        btnPlus.Location = new Point(227, 188);
         btnPlus.Name = "btnPlus";
         btnPlus.Size = new Size(52, 49);
         btnPlus.TabIndex = 10;
@@ -175,7 +173,7 @@ partial class Form1
         // 
         btnMinus.BackColor = Color.FromArgb(192, 64, 0);
         btnMinus.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnMinus.Location = new Point(290, 131);
+        btnMinus.Location = new Point(290, 188);
         btnMinus.Name = "btnMinus";
         btnMinus.Size = new Size(52, 49);
         btnMinus.TabIndex = 11;
@@ -232,7 +230,7 @@ partial class Form1
         // 
         btnOpenParenthesis.BackColor = Color.FromArgb(192, 64, 0);
         btnOpenParenthesis.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnOpenParenthesis.Location = new Point(227, 188);
+        btnOpenParenthesis.Location = new Point(227, 76);
         btnOpenParenthesis.Name = "btnOpenParenthesis";
         btnOpenParenthesis.Size = new Size(52, 49);
         btnOpenParenthesis.TabIndex = 16;
@@ -244,7 +242,7 @@ partial class Form1
         // 
         btnCloseParenthesis.BackColor = Color.FromArgb(192, 64, 0);
         btnCloseParenthesis.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        btnCloseParenthesis.Location = new Point(290, 188);
+        btnCloseParenthesis.Location = new Point(290, 76);
         btnCloseParenthesis.Name = "btnCloseParenthesis";
         btnCloseParenthesis.Size = new Size(52, 49);
         btnCloseParenthesis.TabIndex = 17;
